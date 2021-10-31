@@ -4,7 +4,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 const Academics = () => {
 	const [ packages, setPackages ] = useState([]);
 	useEffect(() => {
-		fetch('http://localhost:5000/packages').then((res) => res.json()).then((data) => setPackages(data));
+		fetch('https://howling-castle-16701.herokuapp.com/packages').then((res) => res.json()).then((data) => setPackages(data));
 	}, []);
 	return (
 		<div className="container">
